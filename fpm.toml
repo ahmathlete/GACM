@@ -1,12 +1,18 @@
-name = "GACM"
-version = "0.1.0"
-license = "license"
-author = "ahmathlete"
-maintainer = "Ahmed.a.b.Homoudi@gmx.de"
-copyright = "Copyright 2023, ahmathlete"
+name        = "GACM"
+version     = "0.1.0"
+description = "A short summary on this project"
+license     = "Public Domain"
+author      = "ahmathlete"
+maintainer  = "Ahmathlete"
+copyright   = "Copyright 2023, ahmathlete"
+categories  = ["Climate Modelling"]
 [build]
 auto-executables = true
-auto-tests = true
-auto-examples = true
+auto-tests       = true
+auto-examples    = true
+external-modules = "netcdf"
 [install]
-library = false
+library = true
+[library]
+source-dir="src"
+
